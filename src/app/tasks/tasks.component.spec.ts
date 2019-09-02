@@ -1,14 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProcessModule } from '@alfresco/adf-process-services';
-import { CoreModule, TranslateLoaderService, AppConfigService, AppConfigServiceMock } from '@alfresco/adf-core';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { RouterTestingModule } from "@angular/router/testing";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ProcessModule } from "@alfresco/adf-process-services";
+import {
+  CoreModule,
+  TranslateLoaderService,
+  AppConfigService,
+  AppConfigServiceMock
+} from "@alfresco/adf-core";
 
-import { TasksComponent } from './tasks.component';
-import { AlfrescoApiServiceMock, AlfrescoApiService } from '@alfresco/adf-core';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TasksComponent } from "./tasks.component";
+import { AlfrescoApiServiceMock, AlfrescoApiService } from "@alfresco/adf-core";
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 
-describe('TasksComponent', () => {
+describe("TasksComponent", () => {
   let component: TasksComponent;
   let fixture: ComponentFixture<TasksComponent>;
 
@@ -34,7 +39,7 @@ describe('TasksComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeDefined();
   });
 });

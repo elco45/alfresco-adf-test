@@ -1,17 +1,21 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { ContentModule } from '@alfresco/adf-content-services';
-import { ProcessModule } from '@alfresco/adf-process-services';
+import { TestBed, ComponentFixture } from "@angular/core/testing";
+import { RouterTestingModule } from "@angular/router/testing";
+import { ContentModule } from "@alfresco/adf-content-services";
+import { ProcessModule } from "@alfresco/adf-process-services";
 import {
-  CoreModule, TranslateLoaderService, AlfrescoApiService,
-  AlfrescoApiServiceMock, AppConfigService, AppConfigServiceMock
-} from '@alfresco/adf-core';
+  CoreModule,
+  TranslateLoaderService,
+  AlfrescoApiService,
+  AlfrescoApiServiceMock,
+  AppConfigService,
+  AppConfigServiceMock
+} from "@alfresco/adf-core";
 
-import { AppComponent } from './app.component';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from "./app.component";
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-describe('AppComponent', () => {
+describe("AppComponent", () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
@@ -38,7 +42,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeDefined();
   });
 });
